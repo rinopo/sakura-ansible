@@ -1,0 +1,8 @@
+[sakura-rental-server]
+sakura-rental-server
+
+[sakura-rental-server:vars]
+ansible_user={{user}}
+ansible_host={{user}}.sakura.ne.jp
+ansible_ssh_private_key_file=~/.ssh/{{user}}
+ansible_python_interpreter=/usr/local/bin/python

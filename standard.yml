@@ -1,0 +1,10 @@
+- vars_prompt:
+  - name: "user"
+    prompt: "さくらのユーザー名"
+    private: no
+  hosts: "sakura-rental-server"
+  tasks:
+    - name: "ホーム直下にtestという空のファイルを作る"
+      file: path="~/test" state="touch"
+#     - name: "テスト・メッセージ"
+#       debug: msg="{{ message }}"
