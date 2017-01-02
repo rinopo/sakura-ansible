@@ -1,0 +1,2 @@
+- name: "ホーム直下にtestという空のファイルを作る"
+  file: path="~/test" state="touch"
